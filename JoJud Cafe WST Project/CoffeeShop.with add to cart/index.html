@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Website</title>
+        <!--Custom Css-->
+        <link rel="stylesheet" href="style.css">
+        <!--product Css-->
+        <link rel="stylesheet" href="CSS/product.css">
+
+        <!--font Awesome Cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEu11U+IjlEUx/HPlELGQjZCmo3FFMmSlCyEpCGzENlQyEImJQv5kyzUCAtmahY2ykLUTP6syELWlv6WCBsLiymK0Kn76un2PPd5X8zd3XvO+X3vufeec/vM8OibYX1tgNnYic1YhQH8wls8wwPcwfemjZYAW3AtiZYSfY1DeFjn1AQ4g9M9HN9PHMfFPKYOcBanehCvuh7FlepCDtiGqYL4ZxzDY7xLfqNpLaaRyXo86WhUAf14hUUNgB9YgReZvQoIU9hXdi6+CoiLGivs/iZ2V+wbsRabsCaL247JWKsC7mJrAXAS55N9GLcKvhM4kAM+YHEhaASXkz0u81LBN2pkdQ74ijn/CfAFC3LANOZlgE8tWYX7I2zI4kJrfg54ieWZ40csaamJ91ia+TzHYA64gT09ZhC96lvNBq5jXw7YhXiKTaOXS659prPwBssaCN0C/hxPnkHMo4Pe/wdAtPJ1eNrRqGt20ayO1EC6yeBc3ijrALE23qnECqgNcAEn8o2VPpy9qVoXpqAmQHSAg7hXd7RtX+Zc7MeO9DVeTSKHMYTbiCf5V19mS311Z27LoDuVgtdvdh5WGZl8sDgAAAAASUVORK5CYII="/> -->
+    
+    </head>
+
+    <!--Header Section-->
+    <body> 
+        <div class="header" id="home">
+            <nav id="navbar">
+                <a href="#home" class="logo"><span></span></a>
+                <div class="imagelogo">
+                    <img src="Resources/Coffee.shop.1.png">
+                </div>
+            
+                <div class="links" id="nav">
+                    <a href="#home">HOME</a>
+                    <a href="#about">About</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#service">Services</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Contact</a>   
+                </div>
+
+                <div class="fa fa-bars" id="menu-btn" onclick="openmenu()"></div>
+                <div class="fa-solid fa-xmark" id="close-btn" onclick="closemenu()"></div> 
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+                <!-- CART  -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Order</h2>
+
+                    <!-- CONTENT  -->
+                    <div class="cart-content">
+
+
+                    </div>
+
+                    <!-- TOTAL   -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!-- BUY BUTTON  -->
+                    <button type="button" class="btn-buy">Order Now</button>
+                    <!-- CART CLOSE  -->
+                    <i class='bx bx-x' id="cart-close"></i>
+                </div>
+            </nav>
+        
+            <div class="content">
+                <h3>Now you can feel the energy!</h3>
+                <h1>start your day with JoJud<br>Cafe`</h1>
+                <button class="btn"><a href="Store/store.html"></a>Buy Now</button>
+            </div>
+        </div>
+        <!--Header Section End-->
+
+        <!--About section-->
+        <section class="about" id="about">
+            <div class="container">
+        <div class="image">
+
+        </div>
+
+        <div class="about-content">
+            <h1>What makes our <span>JoJud Cafe`</span>Special?</h1>
+            <h3>It's a place like a Sunbeams dance on aromatic beans, laughter mingles with the clink of mugs, and every sip explodes with a symphony of flavors that awakens your senses. At JoJud, it's not just cafe`, it's an experience</h3>
+            <p></p>
+        <button class="btn" style="color: black;">About Us</button>
+        </div>
+
+        </section>
+        <!--About section End-->
+
+        <!--Blog Section-->
+        <section class="blog" id="blog">
+            <h1 class="heading">Our <span>Blog</span></h1>
+            <p class="heading-description">Read our blog and know more about our JoJud Cafe`</p>
+            <div class="container">
+                <div class="post">
+                    <div class="blog-img">
+                        <img src="Resources/post1.jpg" alt="">
+                        <span>13 <br> Dev </span>
+                    </div>
+                    <div class="blog-content">
+                        <h3> By |<span>JoJud Cafe`</span></h3>
+                        <h1>JoJud Journeys: Sipping Stories, Savoring Serendipity.</h1>
+                        <p>Fueling Northerhanon's  next generation of dreamers and doers.</p>
+                    </div>                 
+                </div>
+                <div class="post">
+                    <div class="blog-img">
+                        <img src="Resources/post2.jpg" alt="">
+                        <span>14 <br> Dec  </span>
+                    </div>
+                    <div class="blog-content">
+                        <h3> By |<span>JoJud Cafe`</span></h3>
+                        <h1>From Brew to Brilliance: Unleash Your Inner Genius at JoJud.</h1>
+                        <p>Every sip a story, every bite an adventure.</p>
+                    </div>                 
+                </div>
+                <div class="post">
+                    <div class="blog-img">
+                        <img src="Resources/post3.jpg" alt="">
+                        <span>15 <br> Dec  </span>
+                    </div>
+                    <div class="blog-content">
+                        <h3> By |<span>JoJud Cafe`</span></h3>
+                        <h1>The JoJud Effect: Where Coffee Sparks Connections, Not Just Conversations.</h1>
+                        <p>Your local hub for caffeine, connection, and creative combustion.</p>
+                    </div>                 
+                </div>
+            </div>
+        </section>
+        <!--Blog Section End-->
+
+        <!--Menu Section-->
+        <section class="shop container" id="menu">
+            <h1 class="section-title">Our <span>Menu</span></h1>
+            <p class="heading-description">Our Cafe`Products</p>
+
+            <!-- CONTENT  -->
+            <div class="shop-content">
+                <!-- BOX 1 -->
+                <div class="product-box">
+                    <img src="product.img/images (16).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Espresso</h2>
+                    <span class="product-price">₱60</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- BOX 2 -->
+                <div class="product-box">
+                    <img src="product.img/images (17).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Mocha</h2>
+                    <span class="product-price">₱50</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- BOX 3 -->
+                <div class="product-box">
+                    <img src="product.img/images (18).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cappuccino</h2>
+                    <span class="product-price">₱55</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- BOX 4 -->
+                <div class="product-box">
+                    <img src="product.img/images (20).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Macchiato</h2>
+                    <span class="product-price">₱60</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- BOX 5 -->
+                <div class="product-box">
+                    <img src="product.img/images (19).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Black Coffee</h2>
+                    <span class="product-price">₱55</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- BOX 6 -->
+                <div class="product-box">
+                    <img src="product.img/images (21).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Macha</h2>
+                    <span class="product-price">₱60</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- BOX 7 -->
+                <div class="product-box">
+                    <img src="product.img/images (22).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Cold Brew</h2>
+                    <span class="product-price">₱60</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- BOX 8 -->
+                <div class="product-box">
+                    <img src="product.img/images (23).jpg" alt="" class="product-img">
+                    <h2 class="product-title">Iced Coffee</h2>
+                    <span class="product-price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+        </section>
+        <!--End Menu Section-->
+
+        <!--Service Section-->
+        <section class="service" id="service">
+                <h1 class="heading">Our <span>Services</span></h1>
+                <p class="heading-description">We deliver our JoJud products for free (door to door) 24-7</p>
+            <div class="container">
+                <div class="service-box">
+                        <div class="service-img">
+                            <img src="Resources/menu-1.jpg" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3> Cozy and inviting cafe` atmosphere</h3>
+                            <p>Our cafe is designed to be a haven for relaxation. Curl up with a good book in our comfy armchairs, or catch up with friends on our spacious patio.</p>
+                        </div>
+                </div>
+                <div class="service-box">
+                        <div class="service-img">
+                            <img src="Resources/menu-2.jpg" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3> Coffee that's brewed with love</h3>
+                            <p>We use only the finest beans and expert baristas to craft your perfect cup. Whether you're a latte lover, a cold brew connoisseur, or a tea enthusiast, we've got something for you.</p>
+                        </div>
+                </div>
+                <div class="service-box">
+                        <div class="service-img">
+                            <img src="Resources/menu-4.jpg" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3>"Unwind, recharge, and groove. Live music nights are back!"</h3>
+                            <p> Themed music nights: Jazz nights, acoustic evenings, open mic nights, etc.</p>
+                            <p>Music pairings: Recommend specific coffee drinks to complement the music genre.</p>
+                        </div>
+                </div>
+            </div>   
+        </section>
+        <!--Service Section End-->
+
+        <!--Team Section-->
+        <section class="team" id="team">
+                <h1 class="heading">Our <span>Team</span></h1>
+                <p class="heading-description">Long lasting tradition & true love for JoJud Cafe`</p>
+                <div class="container">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img src="Resources/myself.jpg"alt="">
+                        </div>
+                        <div class="team-content">
+                            <h3>Joshua Tan</h3>
+                            <p>UX Designer/Documentator</p>
+                            <div class="social">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                                <a href="#"><i class='bx bxl-google' ></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img src="Resources/Iself.png"alt="">
+                        </div>
+                        <div class="team-content">
+                            <h3>Judens Bandal</h3>
+                            <p>Web Designer/Front-End Dev</p>
+                            <div class="social">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                                <a href="#"><i class='bx bxl-google' ></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img src="Resources/Pogie.jpg"alt="">
+                        </div>
+                        <div class="team-content">
+                            <h3>Pogie</h3>
+                            <p>Coffee Artisan</p>
+                            <div class="social">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                                <a href="#"><i class='bx bxl-google' ></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--Team Section End-->
+
+        <!--Contact Section-->
+        <section class="contact" id="contact">
+            <h1 class="heading">Contact <span>Us</span></h1>
+            <p class="heading-description">JoJud Cafe` always here for you...</p>
+            <div class="container">
+                <div class="contact-box">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h2>Email address <br> <span>Send email anytime</span> </h2>
+                    </div>
+                    <div>
+                        <p>judensbandal@gmail.com <br> <span>joshtn234@gmail.com</span></p>
+                        <i class="fa-solid f-right-long"></i>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h2>Address <br> <span> Find Us</span> </h2>
+                    </div>
+                    <div>
+                        <p>University of Eastern Philippines <br> <span>Catarman, Northern Samar 6400</span></p>
+                        <i class="fa-solid f-right-long"></i>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <h2>Call Us <br> <span>Call us anytime</span> </h2>
+                    </div>
+                    <div>
+                        <p>+639709243500</p>
+                        <i class="fa-solid f-right-long"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact Section End-->
+
+        <!--Footer Section-->
+        <section class="footer">
+        <div class="container">
+                <div class="footer-box">
+                    <h3>about us</h3>
+                    <p>JoJud Cafe isn't just a place to grab a latte or a barako It's a vibrant hub where smiles bloom brighter than our perfectly steamed milk, and conversations flow as freely as our freshly brewed coffee. We're more than baristas; we're alchemists of joy, transforming every bean into an experience that warms your heart and fuels your soul.</p>
+                    <p>Copyrights &copy; 2023 All rights reserved By <a href="">Bandal & Tan</a></p>
+                </div>
+                <div class="footer-box">
+                    <h3>Newsletter</h3>
+                    <p>Start update with our latest</p>
+                    <form>
+                        <input type="email" name="Email" placeholder="email">
+                        <button type="submit"><i class="fa-solid fa-right-long" style="color: brown;"></i></button>
+                    </form>
+                </div>
+                <div class="footer-box">
+                    <h3>Follow Us</h3>
+                    <p>Connect With Us on:</p>
+                    <div>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-google' ></i></a>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!--Footer Section End-->
+            <script src="js/script.js"></script>
+            <script src="js/product.js"></script>
+
+    </body>
+</html>
